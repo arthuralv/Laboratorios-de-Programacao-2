@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AbaixoAssinado",
+            "request": "launch",
+            "mainClass": "lab1.AbaixoAssinado",
+            "projectName": "Prog2"
+        }
+    ]
+}
