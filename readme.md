@@ -10,5 +10,3 @@ Feitos:
 Adicional:
 
 - Algumas questões extras do Dirlididi
-
-~~eu sei o que eu to fazendo
