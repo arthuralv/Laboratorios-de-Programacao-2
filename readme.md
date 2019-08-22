@@ -1,3 +1,14 @@
-# Programacao 2 - Laboratorios
+# Programação 2 - Laboratórios
 
 Repositório de Laboratórios
+
+Feitos: 
+
+- Lab01
+- Lab02
+
+Adicional:
+
+- Algumas questões extras do Dirlididi
+
+~~eu sei o que eu to fazendo
