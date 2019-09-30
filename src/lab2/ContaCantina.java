@@ -2,37 +2,31 @@ package lab2;
 
 public class ContaCantina {
 	
-	private String nomeDaCantina;
-	private int qtdItens;
-	private int valorCentavos;
-	private int valorAtual;
+	private String dono;
+	private double saldo;
+	private int produtos;
 	
-	public ContaCantina(String nomeDaCantina) {
-		this.nomeDaCantina = nomeDaCantina;
-		this.qtdItens = 0;
-		this.valorCentavos = 0;
-	}
-	
-	public void cadastraLanche(int qtdItens, int valorCentavos) {
-		this.qtdItens += qtdItens;
-		this.valorCentavos += valorCentavos;
-		this.valorAtual += valorCentavos;
-	}
-	
-	public void pagaConta(int valorCentavos) {
-		if (valorCentavos <= this.valorAtual) {
-			this.valorAtual -= valorCentavos;
-		} else {
-			System.out.println("Por favor, refaca o pagamento com um valor valido!");
-		}
+	public ContaCantina(String dono) {
+		this.dono = dono;
+		this.saldo = 0;
 	}
 
-	public int getFaltaPagar() {
-		return this.valorAtual;
+	public void cadastraLanche(int quantidade, double preco) {
+		this.saldo += quantidade * preco;
+		this.produtos += quantidade;
+	}
+	
+	public void pagaConta(double dinheiro) {
+		this.saldo -= dinheiro;
+	}
+	
+	public double getFaltaPagar() {
+		return this.saldo;
 	}
 	
 	@Override
 	public String toString() {
-		return this.nomeDaCantina + " " + this.qtdItens + " " + this.valorCentavos;
+		return this.dono + " " + this.produtos + " " + this.saldo;
 	}
+	
 }

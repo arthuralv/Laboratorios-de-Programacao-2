@@ -12,7 +12,7 @@ public class ContaLaboratorio {
 	}
 	
 	public ContaLaboratorio(String nome, int cota) {
-		this(nome);
+		this.nome = nome;
 		this.cota = cota;
 	}	
 

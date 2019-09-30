@@ -5,9 +5,30 @@ public class Coisa {
 
 
     public static void main(String[] args) {
-    	    
-    		int [] peso = {6, 4};
-            Disciplina prog2 = new Disciplina("PROGRAMACAO 2", 2, peso);
+
+      
+            ContaLaboratorio contaLCC2 = new ContaLaboratorio("LCC2");
+
+            contaLCC2.consomeEspaco(1999);
+
+            System.out.println(contaLCC2.atingiuCota());
+
+            contaLCC2.consomeEspaco(2);
+
+            System.out.println(contaLCC2.atingiuCota());
+
+            contaLCC2.liberaEspaco(1);
+
+            System.out.println(contaLCC2.atingiuCota());
+
+            contaLCC2.liberaEspaco(1);
+
+            System.out.println(contaLCC2.atingiuCota());
+
+            System.out.println(contaLCC2.toString());
+
+
+            Disciplina prog2 = new Disciplina("PROGRAMACAO 2");
 
             prog2.cadastraHoras(4);
 
@@ -15,15 +36,18 @@ public class Coisa {
 
             prog2.cadastraNota(2, 6.0);
 
+            prog2.cadastraNota(3, 7.0);
+
             System.out.println(prog2.aprovado());
+
+
+            prog2.cadastraNota(4, 10.0);
 
             System.out.println(prog2.aprovado());
 
             System.out.println(prog2.toString());
-            
-      
-/*
-           
+
+        
 
             ContaCantina cantinaSeuMatias = new ContaCantina("Seu Matias");            
 
@@ -61,7 +85,7 @@ public class Coisa {
             saude.defineSaudeFisica("fraca");
 
             System.out.println(saude.getStatusGeral());
-*/
+           
     }  
 
 }

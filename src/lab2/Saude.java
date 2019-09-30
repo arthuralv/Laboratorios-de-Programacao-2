@@ -4,29 +4,30 @@ public class Saude {
 	
 	private String saudeMental;
 	private String saudeFisica;
-
-	public Saude(){
+	
+	public Saude() {
 		this.saudeMental = "boa";
 		this.saudeFisica = "boa";
-	}
+		}
 	
-	public void	defineSaudeMental(String saudeMental) {
-		this.saudeMental = saudeMental;
-	}
-	
-	public void	defineSaudeFisica(String saudeFisica) {
-		this.saudeFisica = saudeFisica;
-	}
-	
-	public String getStatusGeral() {
-		if (this.saudeMental.equals("boa") && this.saudeFisica.equals("boa")) {
-			return "boa";
-		} else if (this.saudeMental.equals("boa") || this.saudeFisica.equals("boa")){
-			return "ok";
-		} else {
+	public String getStatusGeral(){
+		if (this.saudeMental.equals(this.saudeFisica)) {
+			return (this.saudeMental.equals("boa") ? "boa" : "ok");
+		}
+		else {
 			return "fraca";
 		}
+		
 	}
-
+	
+	public void defineSaudeMental(String saude) {
+		this.saudeMental = saude;
+	}
+	
+	public void defineSaudeFisica(String saude) {
+		this.saudeFisica = saude;
+	}
+	
+	
+	
 }
-
