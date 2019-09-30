@@ -1,7 +1,5 @@
 # Programação 2 - Laboratórios
 
-Repositório de Laboratórios
-
 Feitos: 
 
 - Lab01 (as questões do Dirlididi)
