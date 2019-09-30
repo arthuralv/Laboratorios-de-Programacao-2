@@ -4,8 +4,10 @@ Repositório de Laboratórios
 
 Feitos: 
 
-- Lab01
+- Lab01 (as questões do Dirlididi)
 - Lab02
+- Lab03
+- Lab04
 
 Adicional:
 
